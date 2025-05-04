@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: quizsystem
+    env: docker
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: NEXT_PUBLIC_SUPABASE_URL
+        value: https://aimzresxqchycswspxnj.supabase.co
+      - key: NEXT_PUBLIC_SUPABASE_ANON_KEY
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFpbXpyZXN4cWNoeWNzd3NweG5qIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDU0OTczNTcsImV4cCI6MjA2MTA3MzM1N30.SeC3DrDrMTN0-jg5OZTbRmVb_4ecIgvThZlcfqedvOE
+    autoDeploy: true
